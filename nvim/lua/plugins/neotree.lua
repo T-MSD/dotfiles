@@ -48,15 +48,15 @@ return {
       -- If you want icons for diagnostic errors, you'll need to define them somewhere.
       -- In Neovim v0.10+, you can configure them in vim.diagnostic.config(), like:
       --
-       vim.diagnostic.config({
-         signs = {
-           text = {
-             [vim.diagnostic.severity.ERROR] = '',
-             [vim.diagnostic.severity.WARN] = '',
-             [vim.diagnostic.severity.INFO] = '',
-             [vim.diagnostic.severity.HINT] = '󰌵',
-           },
-         }
+      vim.diagnostic.config({
+        signs = {
+          text = {
+            [vim.diagnostic.severity.ERROR] = "",
+            [vim.diagnostic.severity.WARN] = "",
+            [vim.diagnostic.severity.INFO] = "",
+            [vim.diagnostic.severity.HINT] = "󰌵",
+          },
+        },
       })
       --
       -- In older versions, you can define the signs manually:
@@ -72,8 +72,8 @@ return {
         enable_diagnostics = true,
         open_files_do_not_replace_types = { "terminal", "trouble", "qf" }, -- when opening files, do not use windows containing these filetypes or buftypes
         open_files_using_relative_paths = false,
-        sort_case_insensitive = false, -- used when sorting files and directories in the tree
-        sort_function = nil, -- use a custom function for sorting files and directories in the tree
+        sort_case_insensitive = false,                                 -- used when sorting files and directories in the tree
+        sort_function = nil,                                           -- use a custom function for sorting files and directories in the tree
         -- sort_function = function (a,b)
         --       if a.type == b.type then
         --           return a.path > b.path
@@ -146,22 +146,22 @@ return {
           -- If you don't want to use these columns, you can set `enabled = false` for each of them individually
           file_size = {
             enabled = true,
-            width = 12, -- width of the column
+            width = 12,    -- width of the column
             required_width = 64, -- min width of window required to show this column
           },
           type = {
             enabled = true,
-            width = 10, -- width of the column
+            width = 10,     -- width of the column
             required_width = 122, -- min width of window required to show this column
           },
           last_modified = {
             enabled = true,
-            width = 20, -- width of the column
+            width = 20,    -- width of the column
             required_width = 88, -- min width of window required to show this column
           },
           created = {
             enabled = true,
-            width = 20, -- width of the column
+            width = 20,     -- width of the column
             required_width = 110, -- min width of window required to show this column
           },
           symlink_target = {
@@ -274,11 +274,11 @@ return {
             },
           },
           follow_current_file = {
-            enabled = false, -- This will find and focus the file in the active buffer every time
+            enabled = false,                 -- This will find and focus the file in the active buffer every time
             --               -- the current file is changed while the tree is open.
-            leave_dirs_open = false, -- `false` closes auto expanded dirs, such as with `:Neotree reveal`
+            leave_dirs_open = false,         -- `false` closes auto expanded dirs, such as with `:Neotree reveal`
           },
-          group_empty_dirs = false, -- when true, empty folders will be grouped together
+          group_empty_dirs = false,          -- when true, empty folders will be grouped together
           hijack_netrw_behavior = "open_default", -- netrw disabled, opening a directory opens neo-tree
           -- in whatever position is specified in window.position
           -- "open_current",  -- netrw disabled, opening a directory opens within the
@@ -327,7 +327,7 @@ return {
         },
         buffers = {
           follow_current_file = {
-            enabled = true, -- This will find and focus the file in the active buffer every time
+            enabled = true,    -- This will find and focus the file in the active buffer every time
             --              -- the current file is changed while the tree is open.
             leave_dirs_open = false, -- `false` closes auto expanded dirs, such as with `:Neotree reveal`
           },
@@ -380,14 +380,14 @@ return {
         },
       })
 
-      vim.keymap.set("n", "<leader>e", "<Cmd>Neotree reveal<CR>")
+      vim.keymap.set("n", "<leader>e", "<Cmd>Neotree toggle<CR>")
       vim.keymap.set("n", "<Leader>o", function()
-				if vim.bo.filetype == "neo-tree" then
-					vim.cmd.wincmd("p")
-				else
-					vim.cmd("Neotree focus")
-				end
-			end, { desc = "Toggle Explorer Focus" })
+        if vim.bo.filetype == "neo-tree" then
+          vim.cmd.wincmd("p")
+        else
+          vim.cmd("Neotree focus")
+        end
+      end, { desc = "Toggle Explorer Focus" })
     end,
   },
 }
