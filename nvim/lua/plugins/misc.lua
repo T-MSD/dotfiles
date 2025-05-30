@@ -29,4 +29,9 @@ return {
       require('colorizer').setup()
     end,
   },
+  
+  {
+		"MunifTanjim/nui.nvim",
+		lazy = true
+	},
 }

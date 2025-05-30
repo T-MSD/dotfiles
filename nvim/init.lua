@@ -27,6 +27,8 @@ require("lazy").setup({
 	require("plugins.mini-animate"),
 	require("plugins.hover"),
 	require("plugins.auto-session"),
+	require("plugins.notify"),
+	require("plugins.noice"),
 }, {
 	ui = {
 		-- If you have a Nerd Font, set icons to an empty table which will use the
