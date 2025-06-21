@@ -214,6 +214,7 @@ return {
         solargraph = {},
         sqlls = {},
         vue_ls = {},
+        tailwindcss = {},
         --
 
         lua_ls = {

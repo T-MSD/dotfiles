@@ -6,6 +6,7 @@ vim.o.breakindent = true -- Enable break indent
 vim.o.undofile = true -- Save undo history
 vim.o.ignorecase = true -- Case-insensitive searching UNLESS \C or capital in search
 vim.o.smartcase = true -- smart case
+vim.opt.textwidth = 120
 vim.wo.signcolumn = 'yes' -- Keep signcolumn on by default
 vim.o.updatetime = 250 -- Decrease update time
 vim.o.timeoutlen = 300 -- time to wait for a mapped sequence to complete (in milliseconds)
