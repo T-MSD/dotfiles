@@ -11,6 +11,9 @@ fi
 # Path to your Oh My Zsh installation.
 export ZSH="$ZDOTDIR/.oh-my-zsh"
 export PATH=$PATH:/usr/local/go/bin
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,

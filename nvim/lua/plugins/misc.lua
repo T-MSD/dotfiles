@@ -16,6 +16,11 @@ return {
     opts = {},
   },
   {
+  	'windwp/nvim-ts-autotag',
+		event = 'InsertEnter',
+		config = true
+  },
+  {
     -- Highlight todo, notes, etc in comments
     'folke/todo-comments.nvim',
     event = 'VimEnter',

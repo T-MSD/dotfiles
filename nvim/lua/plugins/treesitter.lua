@@ -32,6 +32,7 @@ return {
         'tsx',
         'css',
         'html',
+        'vue',
       },
 
       -- Autoinstall languages that are not installed

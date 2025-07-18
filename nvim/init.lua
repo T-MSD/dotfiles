@@ -14,7 +14,8 @@ local rtp = vim.opt.rtp
 rtp:prepend(lazypath)
 
 require("lazy").setup({
-	require("plugins.themes.gruvbox"),
+	require("plugins.themes.catppuccin"),
+	require("plugins.autocompletion"),
 	require("plugins.neotree"),
 	require("plugins.bufferline"),
 	require("plugins.lualine"),
@@ -29,6 +30,7 @@ require("lazy").setup({
 	require("plugins.auto-session"),
 	require("plugins.notify"),
 	require("plugins.noice"),
+	require("plugins.markdown"),
 }, {
 	ui = {
 		-- If you have a Nerd Font, set icons to an empty table which will use the
