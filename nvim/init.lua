@@ -14,7 +14,7 @@ local rtp = vim.opt.rtp
 rtp:prepend(lazypath)
 
 require("lazy").setup({
-	require("plugins.themes.catppuccin"),
+	require("plugins.themes.gruvbox"),
 	require("plugins.autocompletion"),
 	require("plugins.neotree"),
 	require("plugins.bufferline"),

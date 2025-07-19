@@ -58,7 +58,7 @@ return {
       options = {
         icons_enabled = true,
         -- gruvbox-material, nord, nordic, tokyonight, onedark, catppuccin
-        theme = 'catppuccin', -- Set theme based on environment variable
+        theme = 'gruvbox-material', -- Set theme based on environment variable
         -- Some useful glyphs:
         -- https://www.nerdfonts.com/cheat-sheet
         --        
