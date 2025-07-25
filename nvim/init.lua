@@ -25,12 +25,13 @@ require("lazy").setup({
 	require("plugins.none-ls"),
 	require("plugins.alpha"),
 	require("plugins.misc"),
-	require("plugins.mini-animate"),
+	--require("plugins.mini-animate"),
 	require("plugins.hover"),
 	require("plugins.auto-session"),
 	require("plugins.notify"),
 	require("plugins.noice"),
 	require("plugins.markdown"),
+	require("plugins.neoscroll")
 }, {
 	ui = {
 		-- If you have a Nerd Font, set icons to an empty table which will use the
@@ -52,3 +53,17 @@ require("lazy").setup({
 		},
 	},
 })
+
+local neoscroll = require('neoscroll')
+local scroll_time = 200
+
+vim.keymap.set({'n'}, 'j', function()
+  local count = vim.v.count1
+  neoscroll.scroll(count, {move_cursor = true, duration = scroll_time})
+end, {silent = true})
+
+vim.keymap.set({'n'}, 'k', function()
+  local count = vim.v.count1
+  neoscroll.scroll(-count, {move_cursor = true, duration = scroll_time})
+end, {silent = true})
+

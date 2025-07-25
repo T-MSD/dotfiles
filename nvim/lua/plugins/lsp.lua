@@ -215,6 +215,29 @@ return {
         sqlls = {},
         vue_ls = {},
         tailwindcss = {},
+        marksman = {},
+        markdown_oxide = {},
+        ltex = {
+					settings = {
+						ltex = {
+						  language = "en-GB",  -- Set the primary spellcheck language
+						  enabled = { "markdown", "text", "latex" },
+						  dictionary = {
+						    ["en-GB"] = { "neovim", "lsp", "markdown" },
+						  },
+						  disabledRules = {
+						    ["en-GB"] = {}, -- Optional
+						  },
+						  hiddenFalsePositives = {
+						    ["en-GB"] = {},
+						  },
+						  additionalRules = {
+						    motherTongue = "pt-PT", -- Optional: helpful if you're bilingual
+						  },
+						},
+					},
+					filetypes = { "markdown", "text", "latex" },
+				},
         --
 
         lua_ls = {
