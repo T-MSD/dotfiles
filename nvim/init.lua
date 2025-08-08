@@ -54,16 +54,3 @@ require("lazy").setup({
 		},
 	},
 })
-
-local neoscroll = require("neoscroll")
-local scroll_time = 200
-
-vim.keymap.set({ "n" }, "j", function()
-	local count = vim.v.count1
-	neoscroll.scroll(count, { move_cursor = true, duration = scroll_time })
-end, { silent = true })
-
-vim.keymap.set({ "n" }, "k", function()
-	local count = vim.v.count1
-	neoscroll.scroll(-count, { move_cursor = true, duration = scroll_time })
-end, { silent = true })
