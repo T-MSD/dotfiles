@@ -80,6 +80,16 @@ return { -- Autocompletion
 			--
 			-- No, but seriously. Please read `:help ins-completion`, it is really good!
 			mapping = cmp.mapping.preset.insert({
+				-- Stop up and down arrow keys from cycling
+				-- between completion suggestions
+				["<Up>"] = cmp.mapping(function(fallback)
+					fallback()
+				end, { "i", "s" }),
+
+				["<Down>"] = cmp.mapping(function(fallback)
+					fallback()
+				end, { "i", "s" }),
+
 				-- Select the [n]ext item
 				["<C-n>"] = cmp.mapping.select_next_item(),
 				-- Select the [p]revious item
