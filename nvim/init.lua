@@ -25,13 +25,13 @@ require("lazy").setup({
 	require("plugins.none-ls"),
 	require("plugins.alpha"),
 	require("plugins.misc"),
-	--require("plugins.mini-animate"),
+	require("plugins.mini-animate"),
 	require("plugins.hover"),
 	require("plugins.auto-session"),
 	require("plugins.notify"),
 	require("plugins.noice"),
 	require("plugins.markdown"),
-	require("plugins.neoscroll"),
+	-- require("plugins.neoscroll"),
 	require("plugins.flash"),
 }, {
 	ui = {
