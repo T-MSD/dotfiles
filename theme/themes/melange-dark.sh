@@ -1,0 +1,24 @@
+FAMILY="melange"
+FLAVOUR="dark"
+APPEARANCE="dark"
+
+GHOSTTY_THEME="Melange Dark"
+
+NVIM_COLORSCHEME="melange"
+NVIM_REPO="savq/melange-nvim"
+NVIM_PLUGIN="melange-nvim"
+NVIM_MODULE=""
+NVIM_OPTS='{}'
+
+TM_TEXT="#ece1d7"
+TM_SUBTLE="#867462"
+TM_ACCENT2="#85b695"
+TM_INACTIVE="#867462"
+TM_ACCENT="#ebc06d"
+TM_FOAM="#89b3b6"
+TM_LOVE="#d47766"
+TM_PINE="#7f91b2"
+TM_MUTED="#c1a78e"
+TM_HL_HIGH="#403a36"
+TM_HL_MED="#34302c"
+TM_BASE="#292522"

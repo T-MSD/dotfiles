@@ -1,0 +1,24 @@
+FAMILY="melange"
+FLAVOUR="light"
+APPEARANCE="light"
+
+GHOSTTY_THEME="Melange Light"
+
+NVIM_COLORSCHEME="melange"
+NVIM_REPO="savq/melange-nvim"
+NVIM_PLUGIN="melange-nvim"
+NVIM_MODULE=""
+NVIM_OPTS='{}'
+
+TM_TEXT="#54433a"
+TM_SUBTLE="#a98a78"
+TM_ACCENT2="#3a684a"
+TM_INACTIVE="#a98a78"
+TM_ACCENT="#a06d00"
+TM_FOAM="#3d6568"
+TM_LOVE="#bf0021"
+TM_PINE="#465aa4"
+TM_MUTED="#7d6658"
+TM_HL_HIGH="#a98a78"
+TM_HL_MED="#e9e1db"
+TM_BASE="#f1f1f1"

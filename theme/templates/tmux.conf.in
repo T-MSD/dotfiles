@@ -1,0 +1,37 @@
+set -g @thm_text "${TM_TEXT}"
+set -g @thm_subtle "${TM_SUBTLE}"
+set -g @thm_accent "${TM_ACCENT}"
+set -g @thm_accent2 "${TM_ACCENT2}"
+set -g @thm_inactive "${TM_INACTIVE}"
+set -g @thm_foam "${TM_FOAM}"
+set -g @thm_love "${TM_LOVE}"
+set -g @thm_pine "${TM_PINE}"
+set -g @thm_muted "${TM_MUTED}"
+set -g @thm_hl_high "${TM_HL_HIGH}"
+set -g @thm_hl_med "${TM_HL_MED}"
+set -g @thm_base "${TM_BASE}"
+
+set -g status on
+set -g status-style "fg=${TM_PINE},bg=default"
+set -g status-left-length 200
+set -g status-right-length 200
+set -g window-status-separator "  "
+
+set -g status-left "#[fg=#{?client_prefix,${TM_LOVE},${TM_TEXT}}] #[fg=${TM_TEXT}]#S#[fg=${TM_TEXT}]  "
+
+set -g status-right "#{E:@pane-notify-status}#[fg=${TM_FOAM}]%H:%M:%S#[fg=${TM_SUBTLE}]  #[fg=${TM_SUBTLE}]󰃰 #[fg=${TM_TEXT}]#[fg=${TM_TEXT}]  #[fg=${TM_SUBTLE}]#{battery_icon_status} #[fg=${TM_FOAM}]#{battery_percentage}#[fg=${TM_TEXT}] "
+
+setw -g window-status-style "fg=${TM_INACTIVE},bg=default"
+setw -g window-status-current-style "fg=${TM_ACCENT},bg=default"
+setw -g window-status-activity-style "fg=${TM_ACCENT2},bg=default"
+setw -g window-status-format "#[fg=${TM_INACTIVE},bg=default]#I#[fg=${TM_INACTIVE},bg=default]  #[fg=${TM_INACTIVE},bg=default]#W#{E:@pane-notify-badge}"
+setw -g window-status-current-format "#[fg=${TM_ACCENT},bg=default]#I#[fg=${TM_ACCENT},bg=default]  #[fg=${TM_ACCENT},bg=default]#W#{E:@pane-notify-badge}"
+
+set -g pane-border-style "fg=${TM_HL_HIGH}"
+set -g pane-active-border-style "fg=${TM_ACCENT}"
+set -g display-panes-colour "${TM_ACCENT}"
+set -g display-panes-active-colour "${TM_TEXT}"
+set -g message-style "fg=${TM_MUTED},bg=default"
+set -g message-command-style "fg=${TM_BASE},bg=${TM_ACCENT}"
+setw -g clock-mode-colour "${TM_LOVE}"
+setw -g mode-style "bg=${TM_HL_MED}"

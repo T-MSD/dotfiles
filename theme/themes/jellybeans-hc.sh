@@ -1,0 +1,25 @@
+FAMILY="jellybeans"
+FLAVOUR="hc"
+APPEARANCE="dark"
+
+GHOSTTY_THEME="jellybeans-hc"
+GHOSTTY_BG="#000000"
+
+NVIM_COLORSCHEME="jellybeans-hc"
+NVIM_REPO="WTFox/jellybeans.nvim"
+NVIM_PLUGIN="jellybeans.nvim"
+NVIM_MODULE="jellybeans"
+NVIM_OPTS='{ on_colors = function(c) c.background = "#000000" end }'
+
+TM_TEXT="#f8f8f0"
+TM_SUBTLE="#909090"
+TM_ACCENT2="#98b0e0"
+TM_INACTIVE="#909090"
+TM_ACCENT="#ffe080"
+TM_FOAM="#78a0b8"
+TM_LOVE="#ff5050"
+TM_PINE="#98b0e0"
+TM_MUTED="#686868"
+TM_HL_HIGH="#282828"
+TM_HL_MED="#303030"
+TM_BASE="#000000"
