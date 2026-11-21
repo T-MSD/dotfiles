@@ -17,7 +17,7 @@ This repo is the source of truth: `install.sh` symlinks each config into `$HOME`
 | `aerospace/.aerospace.toml` | `~/.aerospace.toml` | [AeroSpace](https://github.com/nikitabobko/AeroSpace) tiling window manager config |
 | `borders/` | `~/.config/borders` | [JankyBorders](https://github.com/FelixKratz/JankyBorders) window border config |
 | `wezterm/.wezterm.lua` | `~/.wezterm.lua` | WezTerm config |
-| `mount_external.sh` | not linked | Linux helper that mounts an NTFS partition by UUID |
+| `others/mount_external.sh` | not linked | Linux helper that mounts an NTFS partition by UUID |
 
 ## Install
 
