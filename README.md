@@ -1,6 +1,6 @@
 # dotfiles
 
-Personal macOS configuration for Neovim, Ghostty, tmux, WezTerm and JankyBorders, plus a `theme` command that switches Ghostty, tmux and Neovim to the same colour scheme in one step.
+Personal macOS configuration for Neovim, Ghostty, tmux, WezTerm, AeroSpace and JankyBorders, plus a `theme` command that switches Ghostty, tmux and Neovim to the same colour scheme in one step.
 
 This repo is the source of truth: `install.sh` symlinks each config into `$HOME`, so any change made locally is already a change in the repo. Commit and push.
 
@@ -14,6 +14,7 @@ This repo is the source of truth: `install.sh` symlinks each config into `$HOME`
 | `tmux/.tmux.conf` | `~/.tmux.conf` | Main tmux config |
 | `theme/` | `~/.config/theme` | Theme definitions and templates used by the `theme` command |
 | `theme/bin/theme` | `~/.local/bin/theme` | The `theme` command |
+| `aerospace/.aerospace.toml` | `~/.aerospace.toml` | [AeroSpace](https://github.com/nikitabobko/AeroSpace) tiling window manager config |
 | `borders/` | `~/.config/borders` | [JankyBorders](https://github.com/FelixKratz/JankyBorders) window border config |
 | `wezterm/.wezterm.lua` | `~/.wezterm.lua` | WezTerm config |
 | `mount_external.sh` | not linked | Linux helper that mounts an NTFS partition by UUID |
@@ -25,6 +26,7 @@ This repo is the source of truth: `install.sh` symlinks each config into `$HOME`
 ```sh
 brew install neovim tmux fzf ripgrep fd
 brew install --cask ghostty font-fira-code-nerd-font
+brew install --cask nikitabobko/tap/aerospace
 brew install FelixKratz/formulae/borders
 
 # tmux plugin manager
@@ -120,6 +122,24 @@ The generated files, `theme/current` and `theme/last/` are git-ignored, so switc
 ## Ghostty
 
 FiraCode Nerd Font at 18pt, no window decorations, left Option as Alt. The theme is set only through the generated `theme.conf`; do not add `theme =` to `ghostty/config`.
+
+## AeroSpace
+
+Tiling window manager, started at login, with no gaps. Main bindings, all on `alt`:
+
+| Keys | Action |
+|---|---|
+| `alt-h/j/k/l` | Focus left / down / up / right |
+| `alt-shift-h/j/k/l` | Move window |
+| `alt-1`…`alt-9`, `alt-z` | Switch workspace |
+| `alt-shift-1`…`alt-shift-9`, `alt-shift-z` | Move window to workspace |
+| `alt-tab` | Previous workspace |
+| `alt-shift-tab` | Move workspace to next monitor |
+| `alt-f` | Fullscreen |
+| `alt-/` / `alt-,` | Tiles / accordion layout |
+| `alt--` / `alt-=` | Resize |
+| `alt-shift-;` | Service mode (`esc` reload, `r` reset layout, `f` float/tile, `backspace` close others) |
+| `alt-esc` | Typing mode: AeroSpace ignores keys until `esc` |
 
 ## WezTerm
 

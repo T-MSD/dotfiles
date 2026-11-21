@@ -16,6 +16,7 @@ LINKS=(
   "theme:.config/theme"
   "theme/bin/theme:.local/bin/theme"
   "wezterm/.wezterm.lua:.wezterm.lua"
+  "aerospace/.aerospace.toml:.aerospace.toml"
 )
 
 link() {
