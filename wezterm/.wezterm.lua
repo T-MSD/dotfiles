@@ -2,36 +2,21 @@ local wezterm = require("wezterm")
 
 local config = wezterm.config_builder()
 
-config.font = wezterm.font("FiraMono Nerd Font")
+config.font = wezterm.font 'FiraCode Nerd Font'
 config.font_size = 18
+config.line_height = 1.05
+config.cell_width = 1.02
 
 -- Disable tabs
 config.enable_tab_bar = false
 
--- Set custom Gruvbox theme
-config.color_schemes = {
-  ["gruvbox_material_dark_hard"] = {
-    foreground = "#D4BE98",
-    background = "#1D2021",
-    cursor_bg = "#D4BE98",
-    cursor_border = "#D4BE98",
-    cursor_fg = "#1D2021",
-    selection_bg = "#D4BE98",
-    selection_fg = "#3C3836",
-
-    ansi = {
-      "#1d2021", "#ea6962", "#a9b665", "#d8a657",
-      "#7daea3", "#d3869b", "#89b482", "#d4be98"
-    },
-    brights = {
-      "#eddeb5", "#ea6962", "#a9b665", "#d8a657",
-      "#7daea3", "#d3869b", "#89b482", "#d4be98"
-    },
-  },
-}
+config.send_composed_key_when_left_alt_is_pressed = true
+config.send_composed_key_when_right_alt_is_pressed = true
+config.adjust_window_size_when_changing_font_size = true
 
 -- Apply the theme
-config.color_scheme = "gruvbox_material_dark_hard"
+config.color_scheme = "GruvboxDarkHard"
+-- "Tokyo Night (Gogh)", 'Catppuccin Frappe', Gruvbox Material (Gogh), GruvboxDark, GruvboxDarkHard
 
 -- Remove borders
 config.window_decorations = "RESIZE"
@@ -45,7 +30,7 @@ config.window_padding = {
 }
 
 -- Background opacity
-config.window_background_opacity = 0.9
+config.window_background_opacity = 1
+config.macos_window_background_blur = 10
 
 return config
-
